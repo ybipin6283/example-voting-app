@@ -4,6 +4,7 @@ Pre-check!
 - Create the AKS cluster for the application host
     - install the argocd
     - configure the argocd for the
+- all the pipeline yaml code given in the same repo.
 
 
 
