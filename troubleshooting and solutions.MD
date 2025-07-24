@@ -4,10 +4,18 @@ Pre-check!
 - Create the AKS cluster for the application host
     - install the argocd
     - configure the argocd for the
-- all the pipeline yaml code given in the same repo.
+- all the pipeline yaml code given in the same repo. (vote-services, worker-servies, result-services)
 
 
+configuration chaneg
+- modify the servcies connection (SP) for each micro pipeline.
+- add the new updatek8smanifest.sh file
+- modify the vote deployment yaml under k8s specification 
+- generate the secret
+- generate the argocd password, and change the old password with updated one
 
+
+=====
 Ultimate Root Cause (RCA):
 Your Azure DevOps agent is running as a user that is NOT in the docker group, or Docker is not properly exposed to that user.
 🔁 Step 1: Add Agent User to docker Group
@@ -46,3 +54,6 @@ It must show:
 ``` bash
 azadmin : azadmin sudo docker
 ```
+2. we have modify the 
+
+!! 
