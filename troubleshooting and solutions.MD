@@ -1,3 +1,12 @@
+Pre-check!
+- create a server for self hosted agent
+- create the ACR to keep the images 
+- Create the AKS cluster for the application host
+    - install the argocd
+    - configure the argocd for the
+
+
+
 Ultimate Root Cause (RCA):
 Your Azure DevOps agent is running as a user that is NOT in the docker group, or Docker is not properly exposed to that user.
 🔁 Step 1: Add Agent User to docker Group
